@@ -1,6 +1,3 @@
-Aquí tienes un ejemplo del archivo `README.md` que puedes subir a tu repositorio GitHub para tu proyecto de administración de alumnos de una academia escolar. He incluido badges y emoticonos para hacerlo más atractivo:
-
-````markdown
 # 📚 Academia Escolar - Gestión y Administración de Alumnos
 
 [![Next.js](https://img.shields.io/badge/Next.js-v14.2.9-blue.svg)](https://nextjs.org/)
@@ -33,7 +30,6 @@ Esta app está diseñada para ser **responsiva**, segura y fácil de usar. Utili
    ```bash
    git clone https://github.com/tu-usuario/academia-escolar.git
    ```
-````
 
 2. Accede al directorio del proyecto:
 
