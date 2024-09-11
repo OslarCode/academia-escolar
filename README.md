@@ -73,7 +73,3 @@ Este proyecto está bajo la licencia [MIT](./LICENSE).
 ---
 
 ¡Gracias por utilizar **Academia Escolar**! Si tienes alguna pregunta o sugerencia, no dudes en abrir un issue. ✨
-
-```
-
-```

@@ -35,7 +35,6 @@ export const authOptions: NextAuthOptions = {
       },
     }),
   ],
-  secret: process.env.NEXTAUTH_SECRET,
   pages: {
     signIn: "/login",
   },
@@ -52,6 +51,9 @@ export const authOptions: NextAuthOptions = {
       }
       return session;
     },
+  },
+  session: {
+    strategy: "jwt",
   },
 };
 
