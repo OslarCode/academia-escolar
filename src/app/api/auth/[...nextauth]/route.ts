@@ -2,7 +2,6 @@ import NextAuth, { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
 
-// En una aplicación real, esto vendría de una base de datos
 const users = [
   {
     id: 1,
@@ -22,16 +21,16 @@ export const authOptions: NextAuthOptions = {
       },
       async authorize(credentials) {
         if (!credentials?.email || !credentials.password) {
-          return null;
+          throw new Error("Email and password are required");
         }
 
         const user = users.find((user) => user.email === credentials.email);
 
-        if (user && bcrypt.compareSync(credentials.password, user.password)) {
-          return { id: user.id.toString(), name: user.name, email: user.email };
+        if (!user || !bcrypt.compareSync(credentials.password, user.password)) {
+          throw new Error("Invalid email or password");
         }
 
-        return null;
+        return { id: user.id.toString(), name: user.name, email: user.email };
       },
     }),
   ],
@@ -55,6 +54,7 @@ export const authOptions: NextAuthOptions = {
   session: {
     strategy: "jwt",
   },
+  secret: process.env.NEXTAUTH_SECRET,
 };
 
 const handler = NextAuth(authOptions);

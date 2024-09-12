@@ -1,4 +1,4 @@
-import Link from "next/link";
+/*import Link from "next/link";
 
 export default function Home() {
   return (
@@ -29,6 +29,19 @@ export default function Home() {
           <p>Administra los cursos disponibles.</p>
         </Link>
       </div>
+    </div>
+  );
+}*/
+
+import Link from "next/link";
+
+export default function HomePage() {
+  return (
+    <div className="container mx-auto mt-10">
+      <h1 className="text-2xl font-bold mb-5">Bienvenido a la aplicación</h1>
+      <Link href="/login" className="text-blue-500 hover:underline">
+        Ir al login
+      </Link>
     </div>
   );
 }
