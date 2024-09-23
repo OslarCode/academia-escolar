@@ -6,6 +6,8 @@
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v3.4.1-blue.svg)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
+![Acedemia-Escolar](https://github.com/OslarCode/academia-escolar/blob/main/src/public/images/AcademiaEscolar.png)
+
 ## 🚀 Descripción
 
 **Academia Escolar** es una aplicación móvil moderna desarrollada para la gestión y administración de los alumnos de una academia escolar. Con esta herramienta, los administradores y profesores podrán realizar un seguimiento eficiente de las inscripciones, el progreso académico, y la información personal de los alumnos. 🏫
